@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{% static 'homepage/s3.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Noto+Sans:wght@600;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'homepage:index' %}">Home</a>
+        <a href="{% url 'homepage:upload' %}">Predict</a>
+        <a href="#">About</a>
+        <a href="{% url 'homepage:contact' %}">Contact</a>
+        <a href="#">Help</a>
+        <div class="animation start-home"></div>
+    </nav>
+    <div id="collection">
+        <div class="card">
+            <img class="image" src = "{% static 'homepage/img/sammy.jpeg'%}" alt="Avatar">
+            <div class = "title">Sameer Mishra</div>
+            <div class = "content">
+                Expert @ Codeforces | Knight @ LeetCode | Ex-Technical Coordinator @ RPH | Full Stack Developer | JIIT'23 ||<br>
+                <a href="https://www.linkedin.com/in/sameer-mishra-68b34b194/">Linkedin : Sameer Mishra</a>        
+                 </div>
+            <div class = "profession">Software Developer Engineer Intern At Inframarket</div>
+            <div class="social">
+                
+            </div>
+        </div>
+        <div class="card">
+            <img class="image" src = "{% static 'homepage/img/sushi.jpeg'%}"alt="Avatar">
+            <div class = "title">Sushant Kumar</div>
+            <div class = "content">
+                Knight @ Leetcode | Specialist @ Codeforces | Profecient in Core Java | Django Developer ||
+                <a href="https://www.linkedin.com/in/sushant-kumar-41b7721a0/">Linkedin : Sushant Kumar</a></div>
+                
+            <div class = "profession">Upcoming Specialist Programmer At Infosys</div>
+            <div class="social">
+                
+            </div>
+        </div>
+        <div class="card">
+            <img class="image" src = "{% static 'homepage/img/yas.jpeg'%}" alt="Avatar">
+            <div class = "title">Yash Jalan</div>
+            <div class = "content"> 
+                Full Stack Developer | JIIT'23 ||
+                <a href="https://www.linkedin.com/in/yash-jalan-a54b62230/">Linkedin : Yash Jalan</a>
+            </div>
+            <div class = "profession">Software Developer Engineer Intern At Evalueserve</div>
+            <div class="social">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+<html>
+    <head>
+        <title>
+            SER APP
+        </title>
+        <link rel = "stylesheet" href = "{% static 'homepage/style.css'%}">
+    </head>
+    <body>
+        {% block body %}
+        
+    <div class="main-container">
+        <div class="heading">
+          <h1 class="heading__title">Speech Emotion Recognition</h1>
+          <p class="heading__credits">  Harness the power of Deep Learning to predict human emotions.</p>
+        </div>
+        <div class = "subheading">
+            <h3>Emotions which we are able to predict : <br> </h3>
+        </div>
+        
+        
+        <section class="grid">
+          <div cass = "imgs" >
+            <img src= "{% static 'homepage/img/neutral.jpg'%}" alt="Sample photo">
+            <div class="neut">Neutral</div>  
+          </div>
+
+          <div cass = "imgs" >
+            <img src= "{% static 'homepage/img/happy.jpg'%}" alt="Sample photo">
+            <div class="happyt">Happy</div>  
+          </div>
+
+          <div cass = "imgs" >
+            <img src= "{% static 'homepage/img/sad.jpg'%}" alt="Sample photo">
+            <div class="sadt">Sad</div>  
+          </div>
+
+          <div cass = "imgs" >
+            <img src= "{% static 'homepage/img/angry.jpg'%}" alt="Sample photo">
+            <div class="angryt">Angry</div>  
+          </div>
+
+          <div cass = "imgs" >
+            <img src= "{% static 'homepage/img/scared.jpg'%}" alt="Sample photo">
+            <div class="feart">Fear</div>  
+          </div>
+          
+          <div cass = "imgs" >
+            <img src= "{% static 'homepage/img/disgust.jpg'%}" alt="Sample photo">
+            <div class="disgust">Disgust</div>  
+          </div>
+        </section>
+        
+    </div>
+        
+    <div class="footer">
+      <h3>   SER by Sameer Mishra, Sushant Kumar and Yash Jalan. Batch'19-23 JIIT.</h3>
+    </div>
+        {% endblock %}
+    </body>
+</html>
